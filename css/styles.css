@@ -280,6 +280,28 @@ address {
     font-weight: 300;
     max-width: 300px;
 }
+
+/* Carausel */
+.carausel-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 1px solid var(--color-primary-dark);
+    cursor: pointer;
+    fill: var(--color-primary-dark);
+}
+
+
+.carausel-button:hover{
+    background-color: var(--color-primary-dark);
+    fill: var(--color-primary-light);
+}
+
 /* Contact section */
 
 .contact-title {
@@ -305,6 +327,15 @@ address {
 
 .address-link:hover {
     color: var(--color-brand-light);
+}
+
+.address-icon {
+    fill: var(--color-primary-light);
+    cursor: pointer;
+}
+
+.address-icon:hover {
+    fill: var(--color-brand-light);
 }
 
 .address-copyright {
