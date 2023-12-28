@@ -222,6 +222,20 @@ address {
 }
 
 /* chefs sections */
+.chefs-list {
+    display: flex;
+    gap: 30px;
+}
+
+.chefs-item {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+.chef-card {
+    display: flex;
+    gap: 30px;
+}
+
 .chefs-title {
     margin: 0 auto 80px;
     max-width: 532px;
