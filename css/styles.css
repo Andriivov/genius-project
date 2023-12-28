@@ -41,7 +41,9 @@
     --color-secondary-dark: #A18268;
 }
 
-* {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -56,6 +58,10 @@ body {
 }
 h1,h2,h3,h4,h5,h6,p {
     margin-top: 0;
+}
+
+a {
+    display: inline-block;
 }
 
 
@@ -224,7 +230,7 @@ address {
 /* chefs sections */
 .chefs-list {
     display: flex;
-    gap: 30px;
+    gap: 40px 30px;
 }
 
 .chefs-item {
@@ -259,6 +265,14 @@ address {
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 16px;
+}
+
+.chef-text p {
+    margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+    margin-bottom: 0;
 }
 
 /* formats section */
@@ -348,11 +362,31 @@ address {
 /* footer */
 
 .footer {
+    padding: 32px 0;
     background-image: url('../images/footer-background.png');
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.footer-container {
+    display: flex;
+}
+
+
+.footer-nav, .footer-address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+}
+
+.footer-logo, .footer-menu {
+    flex-grow: 1;
+}
+
+.address-list, .address-info {
+    flex-grow: 1;
 }
 
 .address-link {

@@ -88,15 +88,17 @@
                 />
                 <div class="">
                   <h3 class="chef-title">Настя</h3>
-                  <p class="chef-text">Привіт, я Настя!</p>
-                  <p class="chef-text">
-                    Вже 10 років, я втілюю <br />
-                    у життя цікаві та смачні ідеї.
-                  </p>
-                  <p class="chef-text">
-                    Я випічу для вас <br />
-                    найсмачніщі вироби!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />
+                      у життя цікаві та смачні ідеї.
+                    </p>
+                    <p>
+                      Я випічу для вас <br />
+                      найсмачніщі вироби!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -109,15 +111,15 @@
                 />
                 <div class="">
                   <h3 class="chef-title">Влад</h3>
-                  <p class="chef-text">Привіт, я Влад!</p>
-                  <p class="chef-text">
-                    Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
-                    любов, з якою ми ділимось кожен раз з Вами через нашу
-                    випічку!
-                  </p>
-                  <p class="chef-text">
-                    Я зроблю для вас унікальну начинку на будь який смак!
-                  </p>
+                  <div class="chef-text">
+                    <p>Привіт, я Влад!</p>
+                    <p>
+                      Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша
+                      любов, з якою ми ділимось кожен раз з Вами через нашу
+                      випічку!
+                    </p>
+                    <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
+                  </div>
                 </div>
               </article>
             </li>
@@ -208,60 +210,66 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Логотип пекарні" />
-          </a>
-          <ul>
-            <li><a class="link" href="#">Франшиза</a></li>
-            <li><a class="link" href="#">Наші традиції</a></li>
-            <li><a class="link" href="#">Формати</a></li>
-            <li><a class="link" href="#">Контакти</a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="address-link" href="tel:+380960000007">
-                + 38 (096) 000 00 07
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
+              <a class="footer-logo" href="#">
+                <img src="./images/logo.svg" alt="Логотип пекарні" />
               </a>
-            </li>
-            <li>
-              <a class="address-link" href="mailto:shopbakery@gmail.com">
-                shopbakery@gmail.com
+            </div>
+            <ul class="footer-menu">
+              <li><a class="link" href="#">Франшиза</a></li>
+              <li><a class="link" href="#">Наші традиції</a></li>
+              <li><a class="link" href="#">Формати</a></li>
+              <li><a class="link" href="#">Контакти</a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="address-list">
+              <li>
+                <a class="address-link" href="tel:+380960000007">
+                  + 38 (096) 000 00 07
+                </a>
+              </li>
+              <li>
+                <a class="address-link" href="mailto:shopbakery@gmail.com">
+                  shopbakery@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="address-link"
+                  href="https://maps.app.goo.gl/SvD66bGZupn16T4t5"
+                  target="_blank"
+                >
+                  Україна, м. Київ, вул. Січових Стрільців 54
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- facebook -->
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook-logo"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- instagram -->
+                  <svg class="address-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="address-link" href="#" target="_blank"
+                >Політика конфіденційності
               </a>
-            </li>
-            <li>
-              <a
-                class="address-link"
-                href="https://maps.app.goo.gl/SvD66bGZupn16T4t5"
-                target="_blank"
-              >
-                Україна, м. Київ, вул. Січових Стрільців 54
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- facebook -->
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-facebook-logo"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <!-- instagram -->
-                <svg class="address-icon" width="32" height="32">
-                  <use href="./images/icons.svg#icon-instagram-logo"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <a class="address-link" href="#" target="_blank"
-            >Політика конфіденційності
-          </a>
-          <p class="address-copyright">&copy; 2022 Дані захищені</p>
-        </address>
+              <p class="address-copyright">&copy; 2022 Дані захищені</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
