@@ -263,6 +263,7 @@ address {
 
 /* formats section */
 
+
 .format-card {
     background: linear-gradient(180deg, rgba(49, 38, 26, 0.00) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
     border: 1px solid lightgray;
@@ -270,6 +271,12 @@ address {
     padding: 24px;
     height: 440px;
 }
+
+.formats-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+} 
 
 .formats-list {
     display: flex;
@@ -300,6 +307,7 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     padding: 0;
@@ -317,6 +325,21 @@ address {
 }
 
 /* Contact section */
+
+.contact-section {
+    padding-bottom: 96px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 32px;
+}
+
+.contact-map {
+    flex-shrink: 0;
+    border: 0;
+    border-radius: 16px;
+}
 
 .contact-title {
     margin-bottom: 16px;
