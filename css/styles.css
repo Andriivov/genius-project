@@ -147,8 +147,15 @@ address {
 
 .button:hover {
     color: var(--color-brand-dark);
-    background: transparent;
+    background-color: transparent;  
 }
+
+/* .button[disabled] {
+    color: gray;
+    background-color: lightgray;
+    cursor: not-allowed;
+    border-color: currentColor;
+} */
 
 /* Hero section */
 .hero-section {
@@ -531,6 +538,14 @@ address {
 .form-input:focus {
     border-color:  var(--color-brand-light);
     outline: none;
+}
+
+.form-input:disabled {
+    border-color: gray;
+}
+
+.form-input:disabled::placeholder {
+    color: lightgray;
 }
 
 .form-input::placeholder{
