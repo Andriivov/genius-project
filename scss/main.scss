@@ -1,98 +1,10 @@
-/* poppins-300 - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
-}
+@import './utils/fonts';
+@import './utils/variables';
 
-/* poppins-regular - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
-}
+@import './base';
 
-/* poppins-600 - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
-}
+@import './utils/utils';
 
-/* poppins-900 - latin */
-@font-face {
-    font-display: swap;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 900;
-    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
-}
-
-
-
-:root {
-    --color-brand-light: #819B57;
-    --color-brand-dark: #465929;
-    --color-primary-dark: #31261A;
-    --color-primary-light: #FAF4EA;
-    --color-secondary-dark: #A18268;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-body {
-    color: var(--color-primary-dark);
-    background-color: var(--color-primary-light);
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    font-weight: 400px;
-    line-height: 1.5;
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-    margin-top: 0;
-}
-
-a {
-    display: inline-block;
-}
-
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-address {
-    font-style: normal;
-}
-
-.visually-hidden {
-    position: absolute;
-    left: -10000px;
-    top: auto;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-}
 
 .section {
     padding: 48px 0;
@@ -104,92 +16,15 @@ address {
     margin: 0 auto;
 }
 
+@import './components/buttons';
+@import './components/links';
+
+
 /* header */
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding-top: 32px;
-
-    .header-container {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-    }
-}
-
-
-
-.header-nav {
-    display: flex;
-    flex-grow: 1;
-    align-items: center;
-    gap: 40px;
-}
-
-.header-nav-list {
-    display: flex;
-    gap: 64px;
-    flex-grow: 1;
-    justify-content: center;
-}
-
-
-.link {
-    text-decoration: none;
-    color: var(--color-primary-light);
-}
-
-.link:hover {
-    color: #819B57;
-}
-
-.button {
-    background-color: var(--color-brand-light);
-    border-radius: 8px;
-    border: 2px solid var(--color-brand-light);
-    padding: 16px 32px;
-    color: var(--color-primary-light);
-    cursor: pointer;
-    font-weight: 600;
-    font-size: 18px;
-
-}
-
-.button:hover {
-    color: var(--color-brand-dark);
-    background-color: transparent;
-}
-
-/* .button[disabled] {
-    color: gray;
-    background-color: lightgray;
-    cursor: not-allowed;
-    border-color: currentColor;
-} */
+@import './components/header';
 
 /* Hero section */
-.hero-section {
-    padding: 272px 0;
-    background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%),
-        url('../images/hero-section-background.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover;
-}
-
-.hero-title {
-    margin-bottom: 0;
-    color: var(--color-primary-light);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 900;
-}
-
-.hero-title .accent {
-    color: var(--color-brand-light);
-}
+@import './components/hero-section';
 
 /* Advantages section */
 .advantages-section {
