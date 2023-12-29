@@ -1,40 +1,43 @@
 /* poppins-300 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
 }
+
 /* poppins-regular - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
 }
+
 /* poppins-600 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
 }
+
 /* poppins-900 - latin */
 @font-face {
-  font-display: swap; 
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 900;
-  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'); 
+    font-display: swap;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
 }
 
 
 
 :root {
-    --color-brand-light:#819B57;
+    --color-brand-light: #819B57;
     --color-brand-dark: #465929;
     --color-primary-dark: #31261A;
     --color-primary-light: #FAF4EA;
@@ -56,7 +59,14 @@ body {
     line-height: 1.5;
     margin: 0;
 }
-h1,h2,h3,h4,h5,h6,p {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin-top: 0;
 }
 
@@ -101,13 +111,15 @@ address {
     left: 0;
     width: 100%;
     padding-top: 32px;
+
+    .header-container {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+    }
 }
 
-.header-container {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
+
 
 .header-nav {
     display: flex;
@@ -116,7 +128,7 @@ address {
     gap: 40px;
 }
 
-.header-nav-list { 
+.header-nav-list {
     display: flex;
     gap: 64px;
     flex-grow: 1;
@@ -124,21 +136,21 @@ address {
 }
 
 
-.link{
+.link {
     text-decoration: none;
     color: var(--color-primary-light);
 }
 
 .link:hover {
-    color:#819B57;
+    color: #819B57;
 }
 
 .button {
     background-color: var(--color-brand-light);
     border-radius: 8px;
     border: 2px solid var(--color-brand-light);
-    padding: 16px 32px;  
-    color:var(--color-primary-light);
+    padding: 16px 32px;
+    color: var(--color-primary-light);
     cursor: pointer;
     font-weight: 600;
     font-size: 18px;
@@ -147,7 +159,7 @@ address {
 
 .button:hover {
     color: var(--color-brand-dark);
-    background-color: transparent;  
+    background-color: transparent;
 }
 
 /* .button[disabled] {
@@ -161,7 +173,7 @@ address {
 .hero-section {
     padding: 272px 0;
     background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%),
-                        url('../images/hero-section-background.jpg');
+        url('../images/hero-section-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -169,19 +181,19 @@ address {
 
 .hero-title {
     margin-bottom: 0;
-    color:var(--color-primary-light);
+    color: var(--color-primary-light);
     text-align: center;
     font-size: 128px;
-    font-weight: 900;  
+    font-weight: 900;
 }
 
 .hero-title .accent {
-    color:var(--color-brand-light);
+    color: var(--color-brand-light);
 }
 
 /* Advantages section */
 .advantages-section {
-    background-color: var(--color-brand-light );
+    background-color: var(--color-brand-light);
     padding: 16px 0;
 }
 
@@ -208,9 +220,10 @@ address {
     text-align: center;
 }
 
-.section-title .accent{
+.section-title .accent {
     color: var(--color-brand-dark);
 }
+
 /* Traditions section */
 
 .traditions-section {
@@ -231,16 +244,16 @@ address {
     margin-bottom: 42px;
 }
 
-.traditions-text .brand{
-    color: var(--color-brand-light); 
+.traditions-text .brand {
+    color: var(--color-brand-light);
     font-weight: 600;
 }
 
-.traditions-text .uppercase{
-    text-transform: uppercase; 
+.traditions-text .uppercase {
+    text-transform: uppercase;
 }
 
-.traditions-text.limited{
+.traditions-text.limited {
     max-width: 330px;
 }
 
@@ -322,7 +335,7 @@ address {
     display: flex;
     align-items: center;
     gap: 32px;
-} 
+}
 
 .formats-list {
     display: flex;
@@ -330,7 +343,7 @@ address {
 }
 
 .formats-item {
-    flex-basis: calc((100% -40px)/ 3);
+    flex-basis: calc((100% - 40px)/ 3);
 }
 
 .formats-title {
@@ -349,7 +362,7 @@ address {
 }
 
 /* Carausel */
-.carausel-button{
+.carausel-button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -365,7 +378,7 @@ address {
 }
 
 
-.carausel-button:hover{
+.carausel-button:hover {
     background-color: var(--color-primary-dark);
     fill: var(--color-primary-light);
 }
@@ -407,22 +420,23 @@ address {
     position: relative;
 }
 
-.footer::before, .footer::after {
+.footer::before,
+.footer::after {
     position: absolute;
     bottom: 0;
     content: '';
     background-repeat: no-repeat;
 }
 
-.footer::before {  
+.footer::before {
     background-image: url('../images/decor-bread-small.png');
     width: 180px;
     height: 120px;
     left: 0;
-    
+
 }
 
-.footer::after { 
+.footer::after {
     background-image: url('../images/decor-bread-big.png');
     width: 380px;
     height: 190px;
@@ -433,17 +447,20 @@ address {
     display: flex;
 }
 
-.footer-nav, .footer-address {
+.footer-nav,
+.footer-address {
     display: flex;
     flex-basis: 50%;
     gap: 20px;
 }
 
-.footer-logo, .footer-menu {
+.footer-logo,
+.footer-menu {
     flex-grow: 1;
 }
 
-.address-list, .address-info {
+.address-list,
+.address-info {
     flex-grow: 1;
 }
 
@@ -483,9 +500,9 @@ address {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0 , 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 20px 0;
-    transition: opacity .3s , visibility .3s;
+    transition: opacity .3s, visibility .3s;
 }
 
 .modal {
@@ -536,19 +553,19 @@ address {
 }
 
 .form-input:focus {
-    border-color:  var(--color-brand-light);
+    border-color: var(--color-brand-light);
     outline: none;
 }
 
 .form-input:disabled {
-    border-color: gray;
+    border-color: lightgray;
 }
 
 .form-input:disabled::placeholder {
     color: lightgray;
 }
 
-.form-input::placeholder{
+.form-input::placeholder {
     color: var(--color-secondary-dark);
     font-size: 16px;
     line-height: 1.17;
@@ -569,6 +586,6 @@ address {
 }
 
 .form-terms-link {
-   color: var(--color-primary-dark);
-   text-underline-offset: 2px; 
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
 }
