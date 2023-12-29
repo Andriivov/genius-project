@@ -5,6 +5,12 @@
 
 @import './utils/utils';
 
+@import './components/buttons';
+@import './components/links';
+@import './components/header';
+@import './components/hero-section';
+
+@import './utils/mixins';
 
 .section {
     padding: 48px 0;
@@ -15,16 +21,6 @@
     max-width: 1288px;
     margin: 0 auto;
 }
-
-@import './components/buttons';
-@import './components/links';
-
-
-/* header */
-@import './components/header';
-
-/* Hero section */
-@import './components/hero-section';
 
 /* Advantages section */
 .advantages-section {
