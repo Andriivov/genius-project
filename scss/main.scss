@@ -1,11 +1,14 @@
 @import './utils/fonts';
 @import './utils/variables';
+@import './utils/texts';
+
+@import './utils/utils';
+@import './utils/mixins';
 
 @import './base';
 
-@import './utils/utils';
-
 @import './components/buttons';
+@import './components/input';
 @import './components/links';
 @import './components/chef-card';
 @import './components/format-card';
@@ -22,8 +25,4 @@
 @import './layout/contact-section';
 @import './layout/footer';
 @import './layout/modal';
-@import './layout/forms';
-
-
-
-@import './utils/mixins';
+@import './layout/form-terms';
